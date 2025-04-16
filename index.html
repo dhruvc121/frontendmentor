@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All frontend mentor projects</title>
+</head>
+<body>
+    <center>
+        <h2>Frontend Mentor Assignments</h2>
+    </center>
+    <ol>
+        <li>
+            <a href="#" id="qr-link">QR Code Component</a>
+        </li>
+    </ol>
+    <script>
+        document.getElementById('qr-link').addEventListener('click', function (e) {
+            e.preventDefault();
+            // Append to the current URL
+            const currentUrl = window.location.href;
+            const appendedPath = '../qr-code-component-main/index.html';
+
+            // Construct the new URL
+            let newUrl;
+            if (currentUrl.endsWith('/')) {
+                newUrl = currentUrl + appendedPath;
+            } else {
+                newUrl = currentUrl + '/' + appendedPath;
+            }
+
+            // Navigate to the new URL
+            window.location.href = newUrl;
+        });
+    </script>
+</body>
+
+</html>

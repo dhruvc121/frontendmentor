@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      padding: 0;
+      margin: 0; 
+    }
+    body{
+      height: 100vh;
+      width: 100%;
+      box-sizing:border-box;
+      font-size: 16px;
+      font-family: 'Out';
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      color: hsl(0, 0%, 7%);
+      font-size: small;
+    }
+    main{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(47, 88%, 63%)
+    }
+    .card{
+      background-color: hsl(0, 0%, 100%);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0px 10px 20px -15px;
+    }
+    .image-div{
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+    .card-tags,.card-timestamp{
+      display: flex;
+      justify-content: start;
+    }
+    .tag-container{
+      background-color: hsl(47, 88%, 63%);
+      font-weight: bold;
+      padding:0.25rem 0.5rem;
+      margin: 0.5rem 0;
+      border-radius: 2px;
+      
+    }
+    .card-timestamp{
+      margin: 0.25rem 0;
+      
+    }
+    .title{
+      font-weight: 800;
+    }
+    .card-title{
+      font-size: large;
+    }
+    .card-title:hover{
+      color: hsl(47, 88%, 63%);
+      cursor: pointer;
+    }
+    .card-subtitle{
+      
+      color: hsl(0, 0%, 42%);
+    }
+    .avatar-container{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+    
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <div class="image-div">
+        <img src="./assets/images/illustration-article.svg" alt="image-qr-code" width="100%">
+      </div>
+      <div class="card-tags">
+        <div class="tag-container">
+          <h5>Learning</h5>
+        </div>
+      </div>
+      <div class="card-timestamp">
+        <div class="timestamp-container">
+          Published 21 Dec 2023
+        </div>
+      </div>
+      <div class="card-title outfit title">
+        <p>HTML And CSS Foundations</p>
+      </div>
+      <div class="card-subtitle">
+        <p class="outfit-subtitle">These languages are backbone of every website, defining structure, content and presentation</p>
+      </div>
+      <div class="card-footer">
+        <div class="avatar-container title">
+          <img src="./assets/images/image-avatar.webp" alt="image-avatar" height="32px" width="32px"/>
+          <p style="font-size: 14px; margin: 0 1rem;">Greg Hooper</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  
+</body>
+</html>
